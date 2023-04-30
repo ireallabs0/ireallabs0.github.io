@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<title> Sensor & Motor Controls - Aerospace | iRealLabs </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<style>
+    #font1 {
+        font-size: 3vw;
+        font-weight: bolder;
+        color: black;
+        /* text-shadow: h-shadow v-shadow blur-radius ; */
+
+    }
+
+
+    .links {
+        text-decoration: none;
+        color: gray;
+
+    }
+
+    .links:hover {
+        color: darkgrey;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.03);
+    }
+
+    a:hover,
+    a:visited,
+    a:link,
+    a:active {
+        text-decoration: none;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+
+
+    /* Full height image header */
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("/w3images/mac.jpg");
+        min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+        padding: 16px;
+    }
+
+    .innerdiv {
+        width: 250px;
+        max-width: 250px;
+        display: inline-block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .customa {
+        color: black;
+        font-weight: 400;
+
+    }
+
+    .togglingNavbar {
+        z-index: 999;
+        background-color: white;
+    }
+
+    .imageHolder {
+        background: rgb(197, 196, 196);
+        height: 145px;
+        width: 130px;
+        border-radius: 5px;
+    }
+
+    .mainHeader {
+        color: black;
+        font-weight: 600;
+    }
+
+    .subHeader {
+        color: #C70404;
+        font-weight: 600;
+        display: inline-block;
+    }
+
+    .subHeader1 {
+        color: black;
+        font-size: 1.05em;
+        font-weight: 500;
+
+    }
+
+    .subpara {
+        color: black;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+
+    .smallIcon {
+        font-size: 0.5em;
+    }
+
+    .bgHolder {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("../../../img/QuickDisconnect.png");
+        height: 400px;
+        width: 400px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .imageplaceholder {
+        color: black;
+        font-weight: 300;
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+
+    .w3-button:hover {
+        color: red !important;
+        background-color: transparent !important;
+        font-weight: 400;
+    }
+
+    .underline {
+        border-bottom: 1px solid black;
+        font-size: 1.15rem;
+        color: black;
+    }
+
+    .underline:hover {
+        color: blue;
+    }
+
+    .slash {
+        font-size: 1.25rem;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-card togglingNavbar" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide"></a>
+            <a a href='../../../index.html#home' class="navbar-brand">
+                <img src="../../../images/logo.jpg" width="auto" height="50" class="d-inline-block  " alt="LOGO">
+            </a>
+            </a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small pr-5">
+                <a href="../../../index.html#about" class="w3-bar-item w3-button customa"><i
+                        class="fa fa-home mr-1"></i>ABOUT US</a>
+                <a href="../../../index.html#services" class="w3-bar-item w3-button customa"><i
+                        class="fa fa-briefcase mr-1"></i>
+                    SERVICES</a>
+                <a href="../../../index.html#projects" class="w3-bar-item w3-button customa"><i
+                        class="fab fa-product-hunt mr-1"></i>
+                    PROJECTS</a>
+                <a href="../../../index.html#team" class="w3-bar-item w3-button customa"><i
+                        class="fa fa-users mr-1"></i> TEAM</a>
+                <a href="../../../index.html#contact" class="w3-bar-item w3-button customa"><i
+                        class="fa fa-phone mr-1"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="../../../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="../../../index.html#servicesPhone" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+        <a href="../../../index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+        <a href="../../../index.html#teamPhone" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+        <a href="../../../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+
+
+    <div style='position:relative;top:6.25em;left:2.5em;display: inline;'><a href='../../../index.html#projects'><span
+                class='underline' style='font-weight: 500;'>Projects</span></a>
+        <span class='slash'>/</span>
+        <a href='../../../index.html#v-pills-aerospace'><span class='underline'
+                style='font-weight: 500;'>Aerospace</span></a>
+    </div>
+    <div class="w3-container" style="width:85%;margin:auto;padding-top:7.5em;">
+
+
+        <div class="row my-1">
+            <div class="col-md-8">
+
+
+                <h3 class="mainHeader" style="margin-left: -2rem;">Sensor & Motor Controls</h3>
+                <div class='my-5'>
+                    <i class="fas fa-chevron-right mr-3" style="color:#C70404 ;margin-left:-2rem"></i>
+                    <h5 class="subHeader">Quick Disconnect Connector</h5>
+
+
+                    <div class="my-3">
+                        <h5 class="subHeader1 mt-4 my-2">Unique Factor</h5>
+                        <div class="row" style="margin-left: -3.45rem;">
+                            <div class="col-1 text-right d-inline-block" style=" padding-right: 0px;">
+                                <i class="fas fa-circle fa-xs smallIcon"></i>
+                            </div>
+                            <div class="col-10 text-left">
+                                <p class="subpara">
+                                    Value engineering project wherein we brought the component cost down by 30%.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="row" style="margin-left: -3.45rem;">
+                            <div class="col-1 text-right d-inline-block" style=" padding-right: 0px;">
+                                <i class="fas fa-circle fa-xs smallIcon"></i>
+                            </div>
+                            <div class="col-10 text-left">
+                                <p class="subpara">It is aerospace worthy. </p>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                        <h5 class="subHeader1 mt-4 my-2">Customer experience</h5>
+                        <div class="row" style="margin-left: -3.45rem;">
+                            <div class="col-1 text-right d-inline-block" style=" padding-right: 0px;">
+                                <i class="fas fa-circle fa-xs smallIcon"></i>
+                            </div>
+                            <div class="col-10 text-left">
+                                <p class="subpara">We have repeat orders and a continued relationship that has been long
+                                    lasting for about 6 years now.</p>
+
+
+                            </div>
+                        </div>
+                        <div class="row" style="margin-left: -3.45rem;">
+                            <div class="col-1 text-right d-inline-block" style=" padding-right: 0px;">
+                                <i class="fas fa-circle fa-xs smallIcon"></i>
+                            </div>
+                            <div class="col-10 text-left">
+
+                                <p class="subpara">From a small and simple start, we now develop products for chemical
+                                    environment and hermetically sealed applications. </p>
+
+                            </div>
+                        </div>
+
+
+
+                        <h5 class="subHeader1 mt-4 my-2">Other noteworthy facts:</h5>
+                        <div class="row" style="margin-left: -3.45rem;">
+                            <div class="col-1 text-right d-inline-block" style=" padding-right: 0px;">
+                                <i class="fas fa-circle fa-xs smallIcon"></i>
+                            </div>
+                            <div class="col-10 text-left">
+                                <p class="subpara">Very easy to use intellectual property design that simplifies the
+                                    integration to the overall system simple.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="bgHolder"></div>
+                <h5 class="imageplaceholder">Quick Disconnect Connector</h5>
+
+            </div>
+        </div>
+
+        <hr class="hr" />
+
+
+
+
+
+        <div class="row ">
+            <div class="col-md-8">
+
+                <div>
+                    <div class='mb-2'>
+                        <i class="fas fa-chevron-right mr-3" style="color:#C70404 ;margin-left:-2rem"></i>
+                        <h5 class="subHeader"> Probe adapters (nose, tail)</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 ">
+                <div></div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-8">
+
+                <div>
+                    <div class='mb-2'>
+                        <i class="fas fa-chevron-right mr-3" style="color:#C70404 ;margin-left:-2rem"></i>
+                        <h5 class="subHeader"> Docking control units</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 ">
+                <div></div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            console.log($(element).siblings('p').text());
+            $('#modal_text').html($(element).siblings('div').html());
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

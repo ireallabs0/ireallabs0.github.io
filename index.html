@@ -1,1 +1,2057 @@
-hello world
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title> Electronic product Engineering | Embedded Systems | India | USA | UK | iRealLabs </title>
+<meta name="description"
+    content="Electronic Product Engineering, Electronic Manufacturing, Embedded systems, Embedded software supporting clients in India, USA, UK, Hyderabad." />
+<meta name="keywords"
+    content="Electronic Product Design Services India, Electronic Product Design Services UK, PCB Design services India,PCB Design services USA, PCB design Services UK,PCB layout india,Product design india, Embedded Product development, Embedded system services, product development services, Embedded Firmware development,Signal Integrity Analysis, Thermal Analysis services India, Multi layer pcb design India, PCB Design House in USA,PCB design bureau UK, Thermal Analysis Services USA, Signal Integrity Services, PCB design houses India, PCB design Hyderabad,PCB design India, PCB Layout Services,PCB Service bureau, High Speed Board Design, PCB Layout Design services, PCB Layout Design,PCB Layout artwork, Printed Circuit board design,Automotive,Electronic Manufacturing services India, Test Fixtures,Aerospace,Defense Electronics services,Multi-layer design,EMS,Electronic Manufacturing Services India, Electronic Assembly,Contract Electronic Manufacture" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" async
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"> </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" async
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"> </script>
+<script src="https://kit.fontawesome.com/a076d05399.js" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js" async></script>
+<script> $(document).ready(function () { var ctrlVideo = document.getElementById("video"); $('.button').click(function () { if ($('.button').hasClass("active")) { ctrlVideo.play(); $('.button').removeClass("active"); $('.button').addClass("inactive"); } else if ($('.button').hasClass("inactive")) { ctrlVideo.pause(); $('.button').removeClass("inactive"); $('.button').addClass("active"); } }); });</script>
+<script> $(document).ready(function () { $("#myNavbar a").on('click', function (event) { if (this.hash !== "") { event.preventDefault(); var hash = this.hash; $('html, body').animate({ scrollTop: $(hash).offset().top }, 800, function () { window.location.hash = hash; }); } }); });</script>
+<script> $(window).scroll(function () { var vpHeight = $(window).height(); var isBlack = false; $(".dark-bg").each(function (i, section) { if (isBlack) { return; } var offset = $(section).offset().top - $(window).scrollTop(); if (((offset + vpHeight) >= 50) && ((offset + vpHeight) <= vpHeight)) { isBlack = true; return; } }); $(".customa").css("color", isBlack ? "white" : "black"); $(".togglingNavbar").css("background", isBlack ? "transparent" : "white"); });</script>
+<style>
+    #font1 {
+        font-size: 3vw;
+        font-weight: bolder;
+        color: #000
+    }
+
+    .links {
+        text-decoration: none;
+        color: gray
+    }
+
+    .links:hover {
+        color: darkgrey;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0,
+                0.03)
+    }
+
+    a:active,
+    a:hover,
+    a:link,
+    a:visited {
+        text-decoration: none
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Roboto',
+            sans-serif
+    }
+
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8
+    }
+
+    .customa {
+        color: #fff;
+        font-weight: 400
+    }
+
+    .servicesHolder {
+        background-image: url("./images/image.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 70%
+    }
+
+    .imgcenter {
+        margin: auto;
+        display: flex;
+        justify-content: center
+    }
+
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("/w3images/mac.jpg");
+        min-height: 100%
+    }
+
+    .w3-bar .w3-button {
+        padding: 16px
+    }
+
+    .w3-button:hover {
+        color: red !important;
+        background-color: transparent !important;
+        font-weight: 400
+    }
+
+    .innerdiv {
+        width: 260px;
+        max-width: 260px;
+        display: inline-block
+    }
+
+    .hidden {
+        display: none
+    }
+
+    .imageHolder {
+        position: relative;
+        height: 175px;
+        width: 160px;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover
+    }
+
+    .clickhere {
+        position: absolute;
+        bottom: 0;
+        right: 2.5%;
+        text-align: right;
+        color: #fff;
+        display: none
+    }
+
+    .underline {
+        border-bottom: 1px solid #000
+    }
+
+    .nav-tabs .nav-link.active {
+        color: #495057;
+        background-color: #fff;
+        border: none
+    }
+
+    .nav-tabs .nav-link {
+        background-color: #fff;
+        border: none
+    }
+
+    .iconHolder {
+        height: 60px;
+        width: 60px;
+        border-radius: 5px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat
+    }
+
+    .imagep1 {
+        background-image: url("images/l1.png")
+    }
+
+    .imagep2 {
+        background-image: url("images/l2.png")
+    }
+
+    .imagep3 {
+        background-image: url("images/l3.png")
+    }
+
+    .imagep4 {
+        background-image: url("images/l4.png")
+    }
+
+    .imagep5 {
+        background-image: url("images/l5.png")
+    }
+
+    .imagep6 {
+        background-image: url("images/l6.png")
+    }
+
+    .image10:hover .clickhere,
+    .image2:hover .clickhere,
+    .image3:hover .clickhere,
+    .image4:hover .clickhere,
+    .image5:hover .clickhere,
+    .image6:hover .clickhere,
+    .image7:hover .clickhere,
+    .image8:hover .clickhere,
+    .image9:hover .clickhere {
+        display: inline-block
+    }
+
+    .image2 {
+        background-image: url("images/embedded.jpg")
+    }
+
+    .image2:hover {
+        background-image: linear-gradient(rgba(0,
+                    0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("images/embedded.jpg")
+    }
+
+    .image3 {
+        background-image: url("images/sensors.jpg")
+    }
+
+    .image3:hover {
+        background-image: linear-gradient(rgba(0,
+                    0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("images/sensors.jpg")
+    }
+
+    .image4 {
+        background-image: url("images/power.jpg")
+    }
+
+    .image4:hover {
+        background-image: linear-gradient(rgba(0,
+                    0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("images/power.jpg")
+    }
+
+    .image5 {
+        background-image: url("images/audio.jpg")
+    }
+
+    .image5:hover {
+        background-image: linear-gradient(rgba(0,
+                    0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("images/audio.jpg")
+    }
+
+    .image6 {
+        background-image: url("images/light.jpg")
+    }
+
+    .image6:hover {
+        background-image: linear-gradient(rgba(0,
+                    0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("images/light.jpg")
+    }
+
+    .image7 {
+        background-image: url("images/fingerprint.jpg")
+    }
+
+    .image7:hover {
+        background-image: linear-gradient(rgba(0,
+                    0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("images/fingerprint.jpg")
+    }
+
+    .image8 {
+        background-image: url("images/robot.jpg")
+    }
+
+    .image8:hover {
+        background-image: linear-gradient(rgba(0,
+                    0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("images/robot.jpg")
+    }
+
+    .image9 {
+        background-image: url("images/wearable.jpg")
+    }
+
+    .image9:hover {
+        background-image: linear-gradient(rgba(0,
+                    0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("images/wearable.jpg")
+    }
+
+    .image10 {
+        background-image: url("images/communic.jpg")
+    }
+
+    .image10:hover {
+        background-image: linear-gradient(rgba(0,
+                    0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("images/communic.jpg")
+    }
+
+    .mainHeader {
+        color: #fff;
+        font-weight: 400
+    }
+
+    .subHeader {
+        font-weight: 400
+    }
+
+    .subMech {
+        font-weight: 500;
+        color: #000
+    }
+
+    .subHeader2 {
+        font-weight: 400;
+        color: red
+    }
+
+    .subHeader3 {
+        font-weight: 500;
+        font-size: 1.05rem
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: blue;
+        background-color: transparent;
+        font-weight: 700
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #000;
+        background-color: transparent;
+        font-weight: 500
+    }
+
+    .customPara {
+        font-size: 1em;
+        font-weight: 400
+    }
+
+    .hr {
+        width: 85%;
+        text-align: center
+    }
+
+    .vl {
+        border-right: 1px solid rgba(0, 0, 0, .1);
+        min-height: xxx;
+        overflow: hidden
+    }
+
+    .vl2 {
+        border-right: 1px solid rgba(0, 0, 0,
+                .1);
+        min-height: 70vh;
+        height: xxx;
+        overflow: hidden
+    }
+
+    .vl1 {
+        border-left: 1px solid rgba(0, 0, 0,
+                .1);
+        min-height: 67.5vh;
+        max-height: xxx;
+        overflow: hidden;
+        margin-left: -.78em
+    }
+
+    .heroText {
+        position: absolute;
+        top: 85.5%;
+        right: 2.5%;
+        color: #fff;
+        font-size: 375%;
+        word-spacing: 4px;
+        letter-spacing: 1px;
+        font-weight: 700
+    }
+
+    .aboutUsText {
+        text-align: justify;
+        font-size: 1.05em;
+        font-weight: 400
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        z-index: 0
+    }
+
+    .togglingNavbar {
+        z-index: 999;
+        background-color: transparent
+    }
+
+    .form-control {
+        font-weight: 600;
+        display: block;
+        width: 100%;
+        height: calc(1em + .75rem + 2px);
+        padding: 1.05rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #000;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 0.1px solid gray;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+    }
+
+    .invalid-feedback {
+        display: none;
+        width: 100%;
+        margin-top: 0.25rem;
+        margin-left: 3rem;
+        font-size: 80%;
+        color: #dc3545
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+        outline: none;
+        border: 1px solid #000;
+        background-color: #fff
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #000;
+        font-weight: 400
+    }
+
+    .btn {
+        border-radius: 25px;
+        padding: 7px 60px
+    }
+
+    .sectionHeader {
+        margin-top: 2rem;
+        font-weight: 800;
+        display: inline-block;
+        font-size: 3rem;
+        display: flex;
+        flex-direction: row
+    }
+
+    .sectionHeader:after,
+    .sectionHeader:before {
+        content: "";
+        flex: 1 1;
+        border-bottom: 2.5px solid red;
+        margin: auto
+    }
+
+    .bgHolder {
+        min-height: 30vh;
+        border-radius: 5px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat
+    }
+
+    .bg1 {
+        background-image: url("./images/t3.jpg")
+    }
+
+    .bg2 {
+        background-image: url("./images/t1.jpg")
+    }
+
+    .bg3 {
+        background-image: url("./images/t4.jpg");
+        width: 100%
+    }
+
+    .bg4 {
+        background-image: url("./images/t2.jpg")
+    }
+
+    .knowMore {
+        display: inline;
+        font-style: italic;
+        font-size: 1rem;
+        font-weight: 700
+    }
+
+    .numberCircle {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        text-align: center;
+        background: #f1f1f1;
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+
+    .card-body {
+        position: relative;
+        padding-top: 30px;
+        box-shadow: 10px 10px 5px 0 #f1f1f1;
+        -webkit-box-shadow: 10px 10px 5px 0 #f1f1f1ea;
+        -moz-box-shadow: 10px 10px 5px 0 #f1f1f1
+    }
+
+    .animatedText {
+        transition: transform 0.5s;
+        transform-origin: 0 100%
+    }
+
+    .animatedText:hover {
+        transition: transform 0.5s;
+        transform: scale(1.05);
+        transform-origin: 0 100%
+    }
+
+    .projHeading {
+        font-size: 3rem;
+        font-weight: 600
+    }
+
+    .nav-tabs {
+        border-bottom: none
+    }
+
+    .contentHolder {
+        text-align: justify;
+        font-weight: 400;
+        letter-spacing: 0.5px
+    }
+
+    .bg-video {
+        height: 100%;
+        opacity: 0.75;
+        overflow: hidden;
+        border-radius: 10px
+    }
+
+    .bg-video__content {
+        height: 100%;
+        -o-object-fit: contain;
+        object-fit: contain;
+        border-radius: 10px
+    }
+
+    .bg-video__content_phone {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: contain;
+        object-fit: contain;
+        border-radius: 10px
+    }
+
+    .playpause {
+        background-image: url("http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png");
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-size: contain;
+        background-position: center
+    }
+
+    .button {
+        border: none;
+        background: transparent;
+        display: block;
+        font-size: 18px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        top: -0;
+        z-index: 999
+    }
+
+    .button:focus {
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none
+    }
+
+    .button.active {
+        height: 100%;
+        width: 100%
+    }
+
+    .button.inactive i {
+        height: 100%;
+        width: 100%;
+        display: none
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: absolute;
+        top: 25%;
+        z-index: 1;
+        height: 50vh;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 15%;
+        color: #fff;
+        text-align: center;
+        opacity: 0.5;
+        transition: opacity 0.15s ease
+    }
+
+    .input-group-text {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: left;
+        padding: 0.375rem 0;
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #000;
+        text-align: center;
+        white-space: nowrap;
+        background-color: #fff;
+        border: none;
+        width: 40px;
+        border-radius: 0.25rem
+    }
+
+    .no-js #loader {
+        display: none
+    }
+
+    .js #loader {
+        display: block;
+        position: absolute;
+        left: 100px;
+        top: 0
+    }
+
+    .se-pre-con {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url("./images/Infinity-2s-200px.gif") center no-repeat #fff
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+        height: 50%
+    }
+
+    @media only screen and (max-width: 767px) {
+        .heroText {
+            position: absolute;
+            top: 75%;
+            right: 15%;
+            color: #fff;
+            font-size: 350%;
+            word-spacing: 4px;
+            letter-spacing: 1px;
+            font-weight: 700
+        }
+
+        .headingsBig {
+            display: none
+        }
+
+        .bigScreen-video {
+            display: none
+        }
+    }
+
+    @media only screen and (max-width: 1125px) {
+        .subHeader {
+            font-size: 0.85rem
+        }
+    }
+</style>
+
+<body>
+    <div class="se-pre-con"></div> <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-card togglingNavbar" id="myNavbar"> <a href="#home"
+                class="w3-bar-item w3-button w3-wide"></a> <a href="#home" class="navbar-brand"> <img
+                    src="images/logo.jpg" width="auto" height="50" class="d-inline-block " alt="LOGO"> </a> </a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small pr-5"> <a href="#about" class="w3-bar-item w3-button customa"><i
+                        class="fa fa-home mr-1"></i>ABOUT US</a> <a href="#services"
+                    class="w3-bar-item w3-button customa"><i class="fa fa-briefcase mr-1"></i> SERVICES</a> <a
+                    href="#projects" class="w3-bar-item w3-button customa"><i class="fab fa-product-hunt mr-1"></i>
+                    PROJECTS</a> <a href="#team" class="w3-bar-item w3-button customa"><i class="fa fa-users mr-1"></i>
+                    TEAM</a> <a href="#contact" class="w3-bar-item w3-button customa"><i class="fa fa-phone mr-1"></i>
+                    CONTACT</a> </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon --> <a
+                href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()"> <i class="fa fa-bars"></i> </a>
+        </div>
+    </div> <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none;z-index: 9999;" id="mySidebar"> <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a> <a href="#about" onclick="w3_close()"
+            class="w3-bar-item w3-button">ABOUT</a> <a href="#servicesPhone" onclick="w3_close()"
+            class="w3-bar-item w3-button">SERVICES</a> <a href="#projects" onclick="w3_close()"
+            class="w3-bar-item w3-button">PROJECTS</a> <a href="#teamPhone" onclick="w3_close()"
+            class="w3-bar-item w3-button">TEAM</a> <a href="#contact" onclick="w3_close()"
+            class="w3-bar-item w3-button">CONTACT</a> </nav> <!-- Start of WebFreeCounter Code --> <img class='d-none'
+        src="https://www.webfreecounter.com/hit.php?id=geemndndf&nd=6&style=9" border="0" alt="free counter">
+    <!-- End of WebFreeCounter Code -->
+    <section class="dark-bg" style='background:black;' id='home'>
+        <div id="carouselExampleControls" class="carousel slide " data-ride="carousel" data-interval='2000' pause='true'
+            style="height:100vh;width: 100vw;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div
+                        style="height:100vh;width:100vw;background-position: center;background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/map-min.jpg');">
+                    </div>
+                    <div class="heroBox">
+                        <h1 class='heroText'>Make in India, Made easy !</h1>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div
+                        style="height:100vh;width:100vw;background-position: center;background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/nano-min.jpg');">
+                    </div>
+                    <div class="heroBox">
+                        <h1 class='heroText'>Make in India, Made easy !</h1>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div
+                        style="height:100vh;width:100vw;background-position: center;background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/car1.jpeg');">
+                    </div>
+                    <div class="heroBox">
+                        <h1 class='heroText'>Make in India, Made easy !</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div
+                        style="height:100vh;width:100vw;background-position: center;background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/car2.jpeg');">
+                    </div>
+                    <div class="heroBox">
+                        <h1 class='heroText'>Make in India, Made easy !</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div
+                        style="height:100vh;width:100vw;background-position: center;background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/consumer.jpg');">
+                    </div>
+                    <div class="heroBox">
+                        <h1 class='heroText'>Make in India, Made easy !</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div
+                        style="height:100vh;width:100vw;background-position: center;background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/aerospace.jpg');">
+                    </div>
+                    <div class="heroBox">
+                        <h1 class='heroText'>Make in India, Made easy !</h1>
+                    </div>
+                </div>
+            </div> <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+                    class="sr-only">Previous</span> </a> <a class="carousel-control-next"
+                href="#carouselExampleControls" role="button" data-slide="next"> <span
+                    class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+        </div>
+    </section> <!-- About Section Starts Here-->
+    <section class="light-bg" id="about">
+        <div class="w3-container" style="padding:85px 16px 0px 16px ;">
+            <h1 class=" sectionHeader "> <span class="mx-4"> About Us </span> </h1>
+            <div class="container" style="padding:10px 10px;">
+                <div class="w3-row-padding w3-center" style="margin-top:30px">
+                    <div style="padding:1em 0 0 0; text-align: left;background:white;">
+                        <p class='aboutUsText'> We are an electronic product development company. At iReal Labs we
+                            realize your dream product and help you ideate, spec it, design for industry, manufacture
+                            and test to make a world class product. The founding team has over 100+ years of combined
+                            experience in design, development of products & project management for various applications
+                            requiring expertise across technologies & domains. We have together developed over 45
+                            products. </p>
+                        <p class='aboutUsText'> While India has tremendous talent and engineering capabilities, very few
+                            design and manufacturing shops in India have a one stop shop solution to develop a complete
+                            product taking complete and full responsibility from idea to final product. At iReal Labs,
+                            we've developed the capability using a revolutionized business model that has consistently
+                            shown to be successful in outsourcing complete electronic products from India. </p>
+                        <div style="height:50vh;position: relative;"
+                            class='row mx-auto my-5 justify-content-center bigScreen-video'>
+                            <div class="bg-video"> <button class="active button"> <i class="fab fa-youtube fa-5x"
+                                        style='color:red;'></i> </button> <video id='video' class="bg-video__content"
+                                    preload="auto" loop>
+                                    <source src="images/vid.mp4" type="video/mp4"> Your browser is not supported!
+                                </video> </div>
+                        </div>
+                        <div style="height:30vh;position: relative;"
+                            class='row mx-auto my-0 justify-content-center d-md-none'>
+                            <div class="bg-video"> <button class="active button"> <i class="fab fa-youtube fa-5x"
+                                        style='color:red;'></i> </button> <video id='video'
+                                    class="bg-video__content_phone" preload="auto" loop>
+                                    <source src="images/vid.mp4" type="video/mp4"> Your browser is not supported!
+                                </video> </div>
+                        </div>
+                        <p class='aboutUsText'> We are helping small and mid-sized companies worldwide realize their
+                            products at a fraction of the cost in India by keeping the quality, experience and timelines
+                            as expected. We have a network of over 100+ engineering design houses and EMS/Contract
+                            manufacturers who work together in a harmonious network closely managed by us to deliver
+                            world class electronics in the domains of Embedded electronics, Consumer, Robotics,
+                            Wearables, Wireless, Industrial, IoT and AI. </p>
+                        <p class='aboutUsText'> This is an innovative approach where the best of the country's
+                            capability is coming together to work as ONE. Whether you are a design house specialized and
+                            successful in doing 1 thing right or a customer who wishes to outsource COMPLETE electronic
+                            product development to India, we can help you achieve success. </p>
+                        <p class='aboutUsText' style="font-weight:600">Make in India, made easy !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-row w3-center w3-light-grey w3-padding-32 mt-5 mb-3 d-none d-md-block">
+            <div class="w3-third"> <span class="w3-xxlarge" style="color:red;font-weight: 700;">100+</span>
+                <h5 style="font-weight: 700;">Years Of Experience</h5>
+            </div>
+            <div class="w3-third"> <span class="w3-xxlarge" style="color:red;font-weight: 700;">100+</span>
+                <h5 style="font-weight: 700;">Projects Done</h5>
+            </div>
+            <div class="w3-third"> <span class="w3-xxlarge" style="color:red;font-weight: 700;">89+</span>
+                <h5 style="font-weight: 700;">Happy Clients</h5>
+            </div>
+        </div>
+        <div class="w3-row w3-center w3-light-grey w3-padding-32 my-0 d-md-none">
+            <div class="w3-third"> <span class="w3-xxlarge" style="color:red;font-weight: 700;">100+</span>
+                <h5 style="font-weight: 700;">Years Of Experience</h5>
+            </div>
+            <div class="w3-third"> <span class="w3-xxlarge" style="color:red;font-weight: 700;">100+</span>
+                <h5 style="font-weight: 700;">Projects Done</h5>
+            </div>
+            <div class="w3-third"> <span class="w3-xxlarge" style="color:red;font-weight: 700;">89+</span>
+                <h5 style="font-weight: 700;">Happy Clients</h5>
+            </div>
+        </div>
+    </section> <!-- About Section Ends Here-->
+    <!-- Services Section Starts Here-->
+    <div class="w3-container w3-light-grey w3-padding-64 services d-none d-md-block" id="services"
+        style='min-height:100vh;'>
+        <h1 class="sectionHeader"> <span class="mx-4"> Services </span> </h1>
+        <div class="container my-5 ">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mt-4 px-5">
+                    <div class="row animatedText">
+                        <h3 style="color:#0c2e3b;font-weight: 700;">Feasibility Check</h3>
+                        <p class="contentHolder">Hardware, firmware, software, cost, feature vs technical tradeoffs,
+                            reliability, compliance, DFX check, NPI & PPAP mapping.</p>
+                    </div>
+                    <div class="row animatedText">
+                        <h3 style="color:#ffa639;font-weight: 700;">Reverse Engineering </h3>
+                        <p class="contentHolder">No design, no code, obsolete, old tech, through hole to SMD or any
+                            other reason, we can make it for you. Just bring the sample to us as long as you’re not
+                            violating any law. We can build it for you. </p>
+                    </div>
+                    <div class="row animatedText">
+                        <h3 style="color:#f6320d;font-weight: 700;">Value Engineering</h3>
+                        <p class="contentHolder">Balancing cost and functionality, DFS, DFM, DFC, DFX we can do it all
+                            and help you source. </p>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="servicesHolder my-5 "></div>
+                </div>
+                <div class="col-md-4 mt-4 px-5 ">
+                    <div class="row animatedText">
+                        <h3 style="color:#f6320d;font-weight: 700;">Certifications & Regulatory</h3>
+                        <p class="contentHolder">UL, FCC, CE, TUV, Intertek, IECEx, ATEX, EMC, safety, environmental,
+                            RohS, REACH, prop 65.We got it all covered. </p>
+                    </div>
+                    <div class="row animatedText">
+                        <h3 style="color:#09c8c5;font-weight: 700;">Life cycle management </h3>
+                        <p class="contentHolder">We can forecast the obsolescence, help you plan refreshes, alternatives
+                            to parts and re-designing. </p>
+                    </div>
+                    <div class="row animatedText">
+                        <h3 style="color:#0c2e3b;font-weight: 700;">Offshore Development Team</h3>
+                        <p class="contentHolder">Your call, our team, you manage and we will provide the resources
+                            necessary to help you succeed. Think of it as staff augmentation for short durations without
+                            the need for you to hire permanently. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Services Section Ends Here-->
+    <!-- ServicesMobile Section Starts Here-->
+    <div class="w3-container w3-light-grey w3-padding-64 services d-md-none">
+        <div id="servicesPhone">
+            <h1 class=" sectionHeader"> <span class="w3-center my-5"> Services </span> </h1>
+            <div class="row text-justify">
+                <div class="col-12 ">
+                    <h3 style="color:#0c2e3b;font-weight: 700;">Feasibility Check</h3>
+                    <p class="contentHolder">Hardware, firmware, software, cost, feature vs technical tradeoffs,
+                        reliability, compliance, DFX check, NPI & PPAP mapping.</p>
+                </div>
+                <div class="col-12">
+                    <h3 style="color:#ffa639;font-weight: 700;">Reverse Engineering </h3>
+                    <p class="contentHolder">No design, no code, obsolete, old tech, through hole to SMD or any other
+                        reason, we can make it for you. Just bring the sample to us as long as you’re not violating any
+                        law. We can build it for you. </p>
+                </div>
+                <div class="col-12">
+                    <h3 style="color:#f6320d;font-weight: 700;">Value Engineering</h3>
+                    <p class="contentHolder">Balancing cost and functionality, DFS, DFM, DFC, DFX we can do it all and
+                        help you source. </p>
+                </div>
+                <div class="col-12">
+                    <h3 style="color:#f6320d;font-weight: 700;">Certifications & Regulatory</h3>
+                    <p class="contentHolder">UL, FCC, CE, TUV, Intertek, IECEx, ATEX, EMC, safety, environmental, RohS,
+                        REACH, prop 65.We got it all covered. </p>
+                </div>
+                <div class="col-12">
+                    <h3 style="color:#09c8c5;font-weight: 700;">Life cycle management </h3>
+                    <p class="contentHolder">We can forecast the obsolescence, help you plan refreshes, alternatives to
+                        parts and re-designing. </p>
+                </div>
+                <div class="col-12">
+                    <h3 style="color:#0c2e3b;font-weight: 700;">Offshore Development Team</h3>
+                    <p class="contentHolder">Your call, our team, you manage and we will provide the resources necessary
+                        to help you succeed. Think of it as staff augmentation for short durations without the need for
+                        you to hire permanently. </p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Projects Section Starting Here -->
+    <div class="w3-container w3-padding-64" id="projects">
+        <h1 class="sectionHeader my-1 d-md-none"><span class="mx-4">Projects</span></h1>
+        <div class="row align-self-center mt-3 headingsBig">
+            <div class="col-md-2 my-2 py-1 align-self-center "
+                style="background:#c70404;border-right: 3px solid white;">
+                <h4 class='mainHeader px-4 my-1'>Domains</h4>
+            </div>
+            <div class="col-md-5 my-2 py-1 text-center align-self-center" style="background:#c70404;">
+                <h4 class='mainHeader my-1'>Electronics Engineering Capabilities</h4>
+            </div>
+            <div class="col-md-5 my-2 py-1 text-center align-self-center"
+                style="background:#c70404;border-left: 3px solid white;">
+                <h4 class='mainHeader px-4 my-1'>Mechanical Engineering Capabilities</h4>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-2 mt-3 vl ">
+                <div class="row d-none d-md-block"></div>
+                <h4 class="subMech text-center my-3 d-md-none">Domains</h4>
+                <div class="nav flex-column nav-pills nav-tabs px-2 text-left " id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-industrial-tab" data-toggle="pill" href="#v-pills-industrial"
+                        role="tab" aria-controls="v-pills-industrial" aria-selected="true"><span
+                            class='underline'>Industrial</span> </a>
+                    <a class="nav-link " id="v-pills-automotive-tab" data-toggle="pill" href="#v-pills-automotive"
+                        role="tab" aria-controls="v-pills-automotive" aria-selected="false"><span
+                            class='underline'>Automotive</span></a>
+                    <a class="nav-link" id="v-pills-consumer-tab" data-toggle="pill" href="#v-pills-consumer" role="tab"
+                        aria-controls="v-pills-consumer" aria-selected="false"> <span class='underline'>Consumer</span>
+                    </a>
+                    <a class="nav-link" id="v-pills-aerospace-tab" data-toggle="pill" href="#v-pills-aerospace"
+                        role="tab" aria-controls="v-pills-aerospace" aria-selected="false"><span
+                            class='underline'>Aerospace</span></a>
+                    <a class="nav-link" id="v-pills-energy-tab" data-toggle="pill" href="#v-pills-energy" role="tab"
+                        aria-controls="v-pills-energy" aria-selected="false"><span class='underline'>Renewable/Non
+                            renewable energy</span></a>
+                    <a class="nav-link" id="v-pills-telecommunication-tab" data-toggle="pill"
+                        href="#v-pills-telecommunication" role="tab" aria-controls="v-pills-telecommunication"
+                        aria-selected="false"><span class='underline'>Telecommunication</span></a>
+                    <a class="nav-link" id="v-pills-security-tab" data-toggle="pill" role="tab"
+                        aria-controls="v-pills-security" aria-selected="false">Security</a>
+                    <a class="nav-link" id="v-pills-media-tab" data-toggle="pill" role="tab"
+                        aria-controls="v-pills-media" aria-selected="false">Medical Electronics</a>
+                    <a class="nav-link" id="v-pills-bio-tab" data-toggle="pill" role="tab" aria-controls="v-pills-bio"
+                        aria-selected="false">Bio Engineering</a>
+                    <a class="nav-link" id="v-pills-agriculture-tab" data-toggle="pill" role="tab"
+                        aria-controls="v-pills-agriculture" aria-selected="false">Agriculture</a>
+                    <a class="nav-link" id="v-pills-environmental-tab" data-toggle="pill" role="tab"
+                        aria-controls="v-pills-environmental" aria-selected="false">Environmental</a>
+                </div>
+                <div class="row mb-5 d-none d-md-block"></div>
+            </div>
+            <div class="col-md-10 mt-3 ">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <h4 class="subMech text-center my-3 d-md-none">Electronics Engineering Capabilities</h4>
+                    <div class="tab-pane fade " id="v-pills-automotive" role="tabpanel"
+                        aria-labelledby="v-pills-automotive-tab">
+                        <div class="row text-center ">
+                            <div class="col-md-6 text-center vl2">
+                                <div class="row justify-content-center ">
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Embedded Systems</h6> <a
+                                            href="projects/embeddedAutomative.html">
+                                            <div class="imageHolder image2 mx-auto">
+                                                <h6 class="clickhere">Click to View </h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Sensor & Motor Controls</h6> <a
+                                            href="projects/sensorControlsAutomotive.html">
+                                            <div class="imageHolder image3 mx-auto mb-3">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row my-4 justify-content-center">
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Power Electronics</h6> <a
+                                            href="projects/powerElectronicsAutomotive.html">
+                                            <div class="imageHolder image4 mx-auto">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Audio/Video Electronics</h6> <a
+                                            href="projects/audioElectronicsAutomative.html">
+                                            <div class="imageHolder image5 mx-auto">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 justify-content-center ">
+                                <div class=" px-3 ">
+                                    <h4 class="subMech text-center my-3 d-md-none">Mechanical Engineering Capabilities
+                                    </h4>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 justify-content-center"> <img src="images/l1.png"
+                                                style="height:55px;"> <span class="my-3 subHeader mx-auto">Product
+                                                Design</span> </div>
+                                        <div class="col-md-6 col-lg-6 justify-content-center"> <img src="images/l2.png"
+                                                style="height:55px;"> <span class="my-3 subHeader mx-auto ">Test
+                                                Jigs</span> </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l3.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Sand Casting</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l4.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Assembly Fixtures</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l5.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Should Casting</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l6.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Certification</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l7.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Pressure Casting</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l8.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Injection Moulds</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l9.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Press Tools</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l10.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Draw Dies</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-consumer" role="tabpanel"
+                        aria-labelledby="v-pills-consumer-tab">
+                        <div class="row text-center">
+                            <div class="col-md-6 text-center vl2">
+                                <div class="row justify-content-center ">
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Robotics</h6> <a
+                                            href="projects/roboticsConsumer.html">
+                                            <div class="imageHolder image8 mx-auto">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Embedded Systems</h6> <a
+                                            href="projects/embeddedConsumer.html">
+                                            <div class="imageHolder image2 mx-auto">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row my-4 justify-content-center">
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Sensor & Motor Controls</h6> <a
+                                            href="projects/sensorControlConsumer.html">
+                                            <div class="imageHolder image3 mx-auto mb-3">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Power Electronics</h6> <a
+                                            href="projects/powerElectronicsConsumer.html">
+                                            <div class="imageHolder image4 mx-auto">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row my-4 justify-content-center">
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Audio/Video Electronics</h6> <a
+                                            href="projects/audioElectronicsConsumer.html">
+                                            <div class="imageHolder image5 mx-auto">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Lighting Controls</h6> <a
+                                            href="projects/lightingControlsConsumer.html">
+                                            <div class="imageHolder image6 mx-auto mb-3">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row my-4 justify-content-center">
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">RFID,Biometric</h6> <a
+                                            href="projects/rfidConsumer.html">
+                                            <div class="imageHolder image7 mx-auto">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 col-lg-5"> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-left">
+                                <div class=" px-3 ">
+                                    <h4 class="subMech text-center my-3 d-md-none">Mechanical Engineering Capabilities
+                                    </h4>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l1.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Product Design</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l2.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Test Jigs</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l5.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Should Casting</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l6.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Certification</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l9.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Press Tools</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l8.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Injection Moulds</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="v-pills-industrial" role="tabpanel"
+                        aria-labelledby="v-pills-industrial-tab">
+                        <div class="row text-center">
+                            <div class="col-md-6 text-center vl2">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Embedded Systems</h6> <a
+                                            href="projects/embeddedIndustrial.html">
+                                            <div class="imageHolder image2 mx-auto">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Sensor & Motor Controls</h6> <a
+                                            href="projects/sensorControlsIndustrial.html">
+                                            <div class="imageHolder image3 mx-auto ">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row my-4 justify-content-center">
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Audio/Video Electronics</h6> <a
+                                            href="projects/audioElectronicsIndustrial.html">
+                                            <div class="imageHolder image4 mx-auto mb-3">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 col-lg-5"> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-left">
+                                <div class=" px-3 ">
+                                    <h4 class="subMech text-center my-3 d-md-none">Mechanical Engineering Capabilities
+                                    </h4>
+                                    <!-- <h6 class="subMech text-center my-3"d-md-none>Mechanical Engineering <br /> Capabilities </h6> -->
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l1.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Product Design</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l2.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Test Jigs</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l3.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Sand Casting</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l4.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Assembly Fixtures</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l5.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Should Casting</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l6.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Certification</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l7.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Pressure Casting</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l9.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Press Tools</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l10.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Draw Dies</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-aerospace" role="tabpanel"
+                        aria-labelledby="v-pills-aerospace-tab">
+                        <div class="row text-center">
+                            <div class="col-md-6 text-center vl2">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Sensor & Motor Controls</h6> <a
+                                            href="projects/sensorControlsAerospace.html">
+                                            <div class="imageHolder image3 mx-auto ">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Audio/Video Electronics</h6> <a
+                                            href="projects/audioElectronicsAerospace.html">
+                                            <div class="imageHolder image5 mx-auto mb-3">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-left">
+                                <div class=" px-3 ">
+                                    <h4 class="subMech text-center my-3 d-md-none">Mechanical Engineering Capabilities
+                                    </h4>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l1.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Product Design</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l2.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Test Jigs</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l3.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Sand Casting</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l4.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Assembly Fixtures</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l5.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Should Casting</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l6.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Certification</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l11.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Testing FAI</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l8.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Injection Moulds</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l9.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Press Tools</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l10.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Drawing Dies</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="v-pills-energy" role="tabpanel"
+                        aria-labelledby="v-pills-energy-tab">
+                        <div class="row text-center">
+                            <div class="col-md-6 text-center vl2">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Power Electronics</h6> <a
+                                            href="projects/powerElectronicsEnergy.html">
+                                            <div class="imageHolder image4 mx-auto">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 col-lg-5"> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-left">
+                                <div class="px-3 ">
+                                    <h4 class="subMech text-center my-3 d-md-none">Mechanical Engineering Capabilities
+                                    </h4>
+                                    <div class="row justify-content-center text-left my-5 mx-auto ">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l1.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Product Design</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l2.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Test Jigs</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l9.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Press Tools</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l4.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Assembly Fixtures</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l5.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Should Casting</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l6.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Certification</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-telecommunication" role="tabpanel"
+                        aria-labelledby="v-pills-telecommunication-tab">
+                        <div class="row text-center">
+                            <div class="col-md-6 text-center vl2">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12 col-lg-5">
+                                        <h6 class="my-3 subHeader mx-auto">Communication</h6> <a
+                                            href="projects/communicationTelecommunication.html">
+                                            <div class="imageHolder image10 mx-auto mb-3">
+                                                <h6 class="clickhere">Click to View</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 col-lg-5"> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-left">
+                                <div class="px-3 ">
+                                    <h4 class="subMech text-center my-3 d-md-none">Mechanical Engineering Capabilities
+                                    </h4>
+                                    <!-- <h6 class="subMech text-center my-3"d-md-none>Mechanical Engineering <br /> Capabilities </h6> -->
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l1.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto">Product Design</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l2.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Test Jigs</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l3.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Sand Casting</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l4.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Assembly Fixtures</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l5.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Should Casting</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l6.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Certification</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l7.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Pressure Casting</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l8.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Injection Moulds</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l9.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Press Tools</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l10.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Draw Dies</span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-left my-5 mx-auto">
+                                        <div class="col-md-6 col-lg-6 "> <img src="images/l11.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Testing FAI</span>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6"> <img src="images/l12.png" style="height:55px;">
+                                            <span class="my-3 subHeader mx-auto ">Life Cycle Test</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-media" role="tabpanel" aria-labelledby="v-pills-media-tab">
+                        <div class="row text-center">
+                            <div class="col-md-6 text-center vl2"> </div>
+                            <div class="col-md-6 text-left">
+                                <div class=" px-3">
+                                    <h6 class="my-5 subMech text-center">Mechanical Engineering <br /> Capabilities
+                                    </h6>
+                                    <div class="row ">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Product Design - </span> ID
+                                                to Engg releases & supply</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Press Tools - </span> Design
+                                                & supply</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Injections Moulds - </span>
+                                                Design & supply</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Test Jigs - </span> Design &
+                                                supply</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Assembly fixtures - </span>
+                                                Design & supply</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Draw Dies - </span> Design &
+                                                supply</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Sand casting - </span> Design
+                                                & supply</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Pressure die casting -
+                                                </span> Design & supply</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Testing FAI - </span> Design
+                                                & supply</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Life Cycle Test - </span>
+                                                Design & supply</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Should Costing - </span> Over
+                                                and above, 90% acuracy for multiple geographic locations</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Certification support -
+                                                </span> Documentation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-bio" role="tabpanel" aria-labelledby="v-pills-bio-tab">
+                        <div class="row text-center">
+                            <div class="col-md-8 text-center"> </div>
+                            <div class="col-md-4 text-left">
+                                <div class="vl1 px-3">
+                                    <h6 class="my-5 subMech text-center">Mechanical Engineering <br /> Capabilities
+                                    </h6>
+                                    <div class="row">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Should Costing - </span> Over
+                                                and above, 90% acuracy for multiple geographic locations</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-agriculture" role="tabpanel"
+                        aria-labelledby="v-pills-agriculture-tab">
+                        <div class="row text-center">
+                            <div class="col-md-8 text-center"> </div>
+                            <div class="col-md-4 text-left">
+                                <div class="vl1 px-3">
+                                    <h6 class="my-5 subMech text-center">Mechanical Engineering <br /> Capabilities
+                                    </h6>
+                                    <div class="row">
+                                        <div class="col-md-1 text-right"> <i class="fas fa-sm fa-chevron-right"></i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            <p class="customPara"><span class="subHeader2">Should Costing - </span> Over
+                                                and above, 90% acuracy for multiple geographic locations</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-environmental" role="tabpanel"
+                        aria-labelledby="v-pills-environmental-tab">
+                        <div class="row text-center">
+                            <div class="col-md-8 text-center"> </div>
+                            <div class="col-md-4 text-left">
+                                <div class="vl1 px-3">
+                                    <h6 class="my-5 subMech text-center">Mechanical Engineering <br /> Capabilities
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Team Section Starting Here-->
+    <div class="w3-container d-none d-md-block" style="padding:120px 16px 0 16px" id="team">
+        <h1 class="sectionHeader mt-1 mb-5"><span class="mx-4">The Team</span></h1>
+        <p class="w3-center w3-large"></p> <br>
+        <div class="w3-container " style="padding:12px 16px">
+            <div class="row justify-content-center">
+                <div class="col-md-4 " style="padding-top:7px;">
+                    <div class="mx-auto " style="height:302px; width:260px;">
+                        <div
+                            style="height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('images/p2.jpg');border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 style="font-weight: 400;" class='d-none d-md-block'>Vikram Surendranath</h2>
+                    <p class="subHeader" style="text-align: justify;">Business leadership, general management, product
+                        management & marketing are Vikram’s key areas of expertise in start up, mid sized and large
+                        environments. He ran flagship product line Xeon for Intel Corp USA. Vikram has helped 2
+                        multinational companies set up operations in India. He ran the Indian operations for Lastar Inc
+                        USA in India as their Country Manager where he set up shop doing product development & sales. He
+                        developed an outsourced product development ecosystem. Instead of hiring R&D talent in-house,
+                        this ecosystem consisting of independent businesses worked on various aspects of the product
+                        design, prototyping, manufacturing and testing. The network developed and shipped tens and
+                        thousands of units to the US with FCC, TUV, CE, UL approvals with shock and vibe and Intertek
+                        certifications done in India. He strategized & created a market entry plan for the company’s
+                        products into the Indian market. B2B and B2C. Dealer network was put in place and products sold
+                        into multinational hospitality brands in India. The company was acquired by Legrand. He
+                        graduated with an MS in EE from Temple University and an MBA from University of California. </p>
+                </div>
+            </div>
+        </div><br>
+        <div class="w3-container " style="padding:12px 16px">
+            <div class="row justify-content-center">
+                <div class="col-md-4 " style="padding-top:7px;">
+                    <div class="mx-auto " style="height:302px; width:260px;">
+                        <div
+                            style="height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('images/p3.png');border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="row "></div>
+                    <h2 style="font-weight: 400;" class='d-none d-md-block'>Shilpa Vikram Jain</h2>
+                    <p class="subHeader" style="text-align: justify;"> An Intel Alumnus Sr. Verification Engineer
+                        and MS from University of Michigan, Ann Arbor, is on her 2nd startup passionate about making
+                        iReal #1 destination for product development. </p>
+                </div>
+            </div>
+        </div><br>
+        <div class="w3-container " style="padding:12px 16px">
+            <div class="row justify-content-center">
+                <div class="col-md-4 " style="padding-top:7px;">
+                    <div class="mx-auto" style="height:302px; width:260px;">
+                        <div
+                            style="height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('images/p4.jpg');border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="row "></div>
+                    <h2 style="font-weight: 400;" class="d-none d-md-block">Kiran A Babu</h2>
+                    <p class="subHeader" style="text-align: justify;">A passionate product developer with over 25 years
+                        in product innovation. Long standing clients include Titan Aerospace and BPL. Focused on
+                        intuitive and application worthy designs. Personally oversees important aspects of the design
+                        and is very hands on with the team. This attribute sets aside Kiran’s capability as a mechanical
+                        product designer. With over 100 products in application for noteworthy brands and his worldwide
+                        knowledge in terms of tooling capabilities and sourcing, nothing seems to be an impossible task
+                        with Kiran. </p>
+                </div>
+            </div>
+        </div><br>
+        <div class="w3-container w3-row-padding" style="padding:12px 16px;">
+            <div class="row justify-content-center my-2">
+                <div class="col-md-4 " style="padding-top:7px;">
+                    <div class="mx-auto " style="height:302px; width:260px;">
+                        <div
+                            style="height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('images/p1.jpg');border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="row "></div>
+                    <h2 style="font-weight: 400;" class='d-none d-md-block'>Rajesh Kunder (Chief Consultant)</h2>
+                    <p class="subHeader" style="text-align: justify;"> An engineer in Electronics & Communication, he
+                        has been a technology consultant offering my services in the product design and development
+                        services. Having worked in the industry for the last 28 years, he is familiar with most of the
+                        business domains especially the automotive industry and the ioT space. He has rich experience in
+                        managing the complete life cycle of a product development starting from innovation to market
+                        deployment and post deployment stages. This journey of entrepreneurship has given him immense
+                        opportunity to learn the various business systems, be it retail, manufacturing industry, Govt,
+                        overseas etc. He was the co-founder of two companies i-Factor Technologies Pvt Ltd and MG Grey
+                        Engine LLP and has strategically exited both the companies. Currently he offers consultation and
+                        guides companies on various domains like product design, business process, project management
+                        and business strategies to those aspiring individuals or companies that make their activities
+                        more efficient and result oriented. </p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Team Section Starting Here-->
+    <div class="w3-container d-md-none" style="padding:120px 16px 0 16px" id="teamPhone">
+        <h1 class="sectionHeader my-1"><span class="mx-4">The Team</span></h1>
+        <p class="w3-center w3-large"></p> <br>
+        <div class="w3-container " style="padding:12px 16px">
+            <div class="row justify-content-center">
+                <div class="col-12" style="padding-top:25px;">
+                    <div class="mx-auto " style="height:302px; width:260px;">
+                        <div
+                            style="height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('images/p2.jpg');border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h2 style="font-weight: 400;" class='my-4 w3-center'>Vikram Surendranath</h2>
+                    <p class="subHeader" style="text-align: justify;">Business leadership, general management, product
+                        management & marketing are Vikram’s key areas of expertise in start up, mid sized and large
+                        environments. He ran flagship product line Xeon for Intel Corp USA. Vikram has helped 2
+                        multinational companies set up operations in India. He ran the Indian operations for Lastar Inc
+                        USA in India as their Country Manager where he set up shop doing product development & sales. He
+                        developed an outsourced product development ecosystem. Instead of hiring R&D talent in-house,
+                        this ecosystem consisting of independent businesses worked on various aspects of the product
+                        design, prototyping, manufacturing and testing. The network developed and shipped tens and
+                        thousands of units to the US with FCC, TUV, CE, UL approvals with shock and vibe and Intertek
+                        certifications done in India. He strategized & created a market entry plan for the company’s
+                        products into the Indian market. B2B and B2C. Dealer network was put in place and products sold
+                        into multinational hospitality brands in India. The company was acquired by Legrand. He
+                        graduated with an MS in EE from Temple University and an MBA from University of California. </p>
+                </div>
+            </div>
+        </div><br>
+        <div class="w3-container " style="padding:12px 16px">
+            <div class="row justify-content-center">
+                <div class="col-12 mt-4">
+                    <div class="mx-auto " style="height:302px; width:260px;">
+                        <div
+                            style="height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('images/p3.png');border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 ">
+                    <h2 style="font-weight: 400;" class=" my-4 w3-center d-md-none">Shilpa Vikram Jain</h2>
+                    <p class="subHeader" style="text-align: justify;"> An Intel Alumnus Sr. Verification Engineer
+                        and MS from University of Michigan, Ann Arbor, is on her 2nd startup passionate about making
+                        iReal #1 destination for product development. </p>
+                </div>
+            </div>
+        </div><br>
+        <div class="w3-container " style="padding:12px 16px">
+            <div class="row justify-content-center">
+                <div class="col-12 mt-5">
+                    <div class="mx-auto" style="height:302px; width:260px;">
+                        <div
+                            style="height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('images/p4.jpg');border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 ">
+                    <h2 style="font-weight: 400;" class=" my-4 w3-center d-md-none">Kiran A Babu</h2>
+                    <p class="subHeader" style="text-align: justify;">A passionate product developer with over 25 years
+                        in product innovation. Long standing clients include Titan Aerospace and BPL. Focused on
+                        intuitive and application worthy designs. Personally oversees important aspects of the design
+                        and is very hands on with the team. This attribute sets aside Kiran’s capability as a mechanical
+                        product designer. With over 100 products in application for noteworthy brands and his worldwide
+                        knowledge in terms of tooling capabilities and sourcing, nothing seems to be an impossible task
+                        with Kiran. </p>
+                </div>
+            </div>
+        </div><br>
+        <div class="w3-container w3-row-padding" style="padding:12px 16px;">
+            <div class="row justify-content-center">
+                <div class="col-12 mt-5">
+                    <div class="mx-auto " style="height:302px; width:260px;">
+                        <div
+                            style="height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('images/p1.jpg');border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 ">
+                    <h2 style="font-weight: 400;" class='my-4 d-md-none w3-center'>Rajesh Kunder (Chief Consultant)</h2>
+                    <p class="subHeader" style="text-align: justify;"> An engineer in Electronics & Communication, he
+                        has been a technology consultant offering my services in the product design and development
+                        services. Having worked in the industry for the last 28 years, he is familiar with most of the
+                        business domains especially the automotive industry and the ioT space. He has rich experience in
+                        managing the complete life cycle of a product development starting from innovation to market
+                        deployment and post deployment stages. This journey of entrepreneurship has given him immense
+                        opportunity to learn the various business systems, be it retail, manufacturing industry, Govt,
+                        overseas etc. He was the co-founder of two companies i-Factor Technologies Pvt Ltd and MG Grey
+                        Engine LLP and has strategically exited both the companies. Currently he offers consultation and
+                        guides companies on various domains like product design, business process, project management
+                        and business strategies to those aspiring individuals or companies that make their activities
+                        more efficient and result oriented. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team Section Ends Here -->
+
+    <!-- Testimonial Section Starts Here
+    <div class="w3-container " style="min-height: 35vh;padding:40px 0px 15px 0;position: relative;" id="testimonial">
+        <div class=" align-items-center d-none d-md-flex">
+            <div class='mx-4'></div>
+            <h1 class='ml-5 pl-5' style='color:black;margin-left:2rem;'>WHAT <span
+                    style="font-weight: 600;">OUR</span><br> <span style="font-weight: 600;">CUSTOMERS</span><br> ARE
+                SAYING</h1>
+            <div
+                style='background-image: url(./images/testimonial.jpeg);height: 22.5vh;background-position:center;background-size: cover;margin-top:-2.5rem;width: 90vw;'>
+            </div>
+        </div>
+        <h1 class="sectionHeader my-1 d-md-none"><span class="mx-4">Testimonial</span></h1>
+        <div class="row justify-content-center my-3">
+            <div class="col-md-1"></div>
+            <div class="col-md-3 mx-auto my-4">
+                <div class="card mx-auto" style="width: 100%;border:none;">
+                    <div class="card-body" style="text-align:center;padding:30px 15px;background-color: #F5f4f4;">
+                        <div class="numberCircle"></div>
+                        <div style="min-height: 46vh;overflow:auto">
+                            <p class="card-text text-justify mx-2 my-4 " style="font-size: 0.75rem;"><i
+                                    class="fas fa-quote-left mr-3"></i>I tasked Vikram with the challenging project of
+                                developing an engineering and product development supply chain for Lastar in India.
+                                Vikram started this work at our HQ for a year, understanding our products, markets and
+                                people, and continued for us in country in India. Vikram built out a network of
+                                engineering and contract manufacturing partners and delivered several major product
+                                developments through design and manufacturing. Vikram brings a unique blend of
+                                entrepreneurial mindset, technical knowledge and unrelenting tenacity. A truly rare find
+                                in an individual !<i class="fas fa-quote-right ml-3"></i></p>
+                            <div class='row my-5'></div>
+                            <div class='mx-auto justify-content-center '>
+                                <h5 style="color:#C70404;font-weight:600;">Gary Hess</h5>
+                                <p style="font-size: 0.95rem;font-weight:600;line-height: 0.5;">Vice President & General
+                                    Manager </p>
+                                <p style="font-size: 0.95rem;font-weight:600;line-height: 0.25;"> C2G Connectivity at
+                                    Legrand </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mx-auto my-4">
+                <div class="card mx-auto" style="width: 100%;border:none;">
+                    <div class="card-body " style="text-align:center;padding:30px 15px;background-color: #F5f4f4;">
+                        <div class="numberCircle"></div>
+                        <div style="min-height: 46vh;overflow-y:auto;overflow-x:hidden;">
+                            <p class="card-text text-justify mx-2 my-4 " style="font-size: 0.75rem;"><i
+                                    class="fas fa-quote-left mr-3"></i>Vikram stepped confidently into a challenging
+                                assignment for Lastar driving the establishment of the necessary business processes and
+                                build out of a supplier partner network to extend our product development capabilities
+                                into India. Vikram worked with limited supporting resources to identify and deploy a
+                                capable array of engineering and production resources to help Lastar engineer and
+                                produce new innovative products. Ultimately, Vikram also lead a successful sales effort
+                                to penetrate the hospitality market in India for some of the products he helped develop
+                                and bring to market. I found Vikram to be tremendously energetic and resourceful,
+                                driving multiple projects concurrently with a wonderful combination of strong people
+                                skills and technical expertise.<i class="fas fa-quote-right ml-3"></i></p>
+                            <div class='mx-auto justify-content-center' style="margin-top:-0.75rem;">
+                                <h5 style="color:#C70404;font-weight:600;"> Bill Diederich</h5>
+                                <p style="font-size: 0.95rem;font-weight:600;line-height: 0.5;">Vice President </p>
+                                <p style="font-size: 0.95rem;font-weight:600;line-height: 0.25;"> Residential at
+                                    Aeroseal </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mx-auto my-4">
+                <div class="card mx-auto " style="width: 100%;border:none;">
+                    <div class="card-body " style="text-align:center;padding:30px 15px;background-color: #F5f4f4;">
+                        <div class="numberCircle"></div>
+                        <div style="min-height: 46vh;overflow:auto">
+                            <p class="card-text text-justify mx-2 my-4 " style="font-size: 0.75rem;"><i
+                                    class="fas fa-quote-left mr-3"></i>I had the pleasure of working with Vikram and
+                                found him to be very astute in his business dealings. As he was starting up the business
+                                for his US company, he was able to interface well and provide good recommendations for
+                                the business to be successful. He was able to clearly articulate the vision for the
+                                growth of his company and work with us to ensure that timely delivery of services were
+                                met along with understanding the various contingencies of Indian conditions accurately.
+                                Overall, excellent person to work with and make things happen for the business.<i
+                                    class="fas fa-quote-right ml-3"></i></p>
+                            <div class='row my-5'></div>
+                            <div class='mx-auto justify-content-center '>
+                                <h5 style="color:#C70404;font-weight:600;">Mahesh Rao</h5>
+                                <p style="font-size: 0.95rem;font-weight:600;line-height: 0.5;">Professor, Head and PG
+                                    Coordinator </p>
+                                <p style="font-size: 0.95rem;font-weight:600;line-height: 0.25;"> Maharaja Institute of
+                                    Technology </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div> -->
+
+    <!-- Contact Section -->
+    <div class="w3-container " style="min-height: 90vh;padding:80px 0px 15px 0;position: relative;" id="contact">
+        <div class=" align-items-center d-none d-md-flex"
+            style='background-image: url(./images/contactus.jpg);height: 20vh;background-position: center;background-size: cover;margin-top:-1.5rem;width: 100vw;'>
+            <h1 class='mx-5 px-5' style='color:white;'>Contact Us</h1>
+        </div>
+        <div style='margin:0 16px;'>
+            <h1 class="sectionHeader my-1 d-md-none"><span class="mx-4">Contact Us</span></h1>
+            <div class="row justify-content-center mt-4 mb-2 ">
+                <div class="col-md-4 align-self-center mt-5">
+                    <form class="gform pure-form pure-form-stacked" method="POST" data-email="contactus@ireallabs.com"
+                        action="https://script.google.com/macros/s/AKfycbwF3CiWYkinLlcKI9xnyOK4dFmEj9x3Gl341d7zUA_dgfm_VPI/exec">
+                        <div class="form-elements">
+                            <fieldset class="pure-group">
+                                <div class="form-group">
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend"> <span class="input-group-text"
+                                                id="basic-addon1"><i class="fas fa-user "></i></span> </div> <input
+                                            type="text" class="form-control" aria-describedby="emailHelp"
+                                            placeholder="Name" id="name" name="name" required>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <div class="form-group">
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend"> <span class="input-group-text"
+                                                id="basic-addon1"><i class="fas fa-phone "></i></span> </div> <input
+                                            type="text" class="form-control" id="phone" aria-describedby="emailHelp"
+                                            required placeholder="Enter Phone Number with country code ex:+91"
+                                            name="phone" required>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <div class="form-group">
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend"> <span class="input-group-text"
+                                                id="basic-addon1"><i class="fas fa-envelope "></i></span> </div> <input
+                                            class="form-control" id="email" name="email" placeholder="Email Address"
+                                            type="email" value="" required>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <div class="form-group">
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend"> <span class="input-group-text"
+                                                id="basic-addon1"><i class="fas fa-comments "></i></span> </div>
+                                        <textarea type="text" class="form-control" id="message" name="message" rows="3"
+                                            placeholder="Enquiry" required></textarea>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class='mx-auto text-center my-3'> <button type="submit"
+                                    class="btn btn-danger">Submit</button> </div>
+                        </div>
+                        <div class="thankyou_message" style="display:none;">
+                            <h2>Thank you, we will get in touch with you soon.</h2>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6 mt-5">
+                    <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no"
+                            marginheight="0" marginwidth="0"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Aditya%20Complex,%20JP%20Nagar%207th%20Phase+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="w3-center w3-black p-1 ">
+        <div class="pt-2">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 align-self-center text-left">
+                    <div class="row mx-auto ">
+                        <div class="col-1 text-right mb-1"> <i class="fas fa-lg fa-map-marker-alt "
+                                style="color:red;"></i> </div>
+                        <div class="col-11 align-self-center text-left">
+                            <p style="font-weight: 300;font-size:0.8em">iReal Labs LLP, 47-1, Central Street, Tasker
+                                Town,
+                                Bangalore - 560 001, India
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 align-self-center text-left">
+                    <div class="row mx-auto text-center">
+                        <div class="col-1"> <i class="fas fa-envelope fa-lg text-right" style="color:red;"></i> </div>
+                        <div class="col-10 text-left"> <a style='color:white' href="vsuren@ireallabs.com">
+                                <p style="font-weight: 300;font-size:0.8em">vsuren@ireallabs.com</p>
+                            </a> </div>
+                    </div>
+                </div>
+                <div class="col-md-3 align-self-center text-left">
+                    <div class="row mx-auto text-right">
+                        <div class="col-1"> <i class="fas fa-phone fa-lg text-right" style="color:red;"></i> </div>
+                        <div class="col-10 text-left">
+                            <p style="font-weight: 300;font-size:0.8em"><a style="color:white;"
+                                    href="tel:+91 9900181833">+91 999001 81833</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 align-self-center">
+                    <div class="row justify-content-center ">
+                        <div class="col-3 text-left d-none d-md-block"> <a
+                                href="https://www.youtube.com/channel/UCEU5oJRH3UAuUCswLlVc05A" target="_blank"><i
+                                    class="fab fa-youtube fa-2x"
+                                    style="z-index:9999999;font-size:36px; color:white;"></i></a></div>
+                        <div class="col-3 text-left d-none d-md-block"> <a href="https://www.facebook.com/ireal.labs/"
+                                target="_blank"><i class="fab fa-facebook-square fa-2x"
+                                    style="z-index:9999999;font-size:36px;color:white;"></i></a> </div>
+                        <div class="col-3 text-left d-none d-md-block"> <a href="https://www.instagram.com/ireallabs/"
+                                target="_blank"><i class="fab fa-instagram-square fa-2x"
+                                    style="z-index:9999999;font-size:36px;color:white;"></i></a> </div>
+                        <div class="col-3 text-left"> <a href="https://www.linkedin.com/company/ireallabs/"
+                                target="_blank"><i class="fab fa-linkedin-in fa-lg"
+                                    style="z-index:9999999;font-size:36px;color:white;"></i></a> </div>
+                    </div>
+                    <div class="row justify-content-center d-md-none">
+                        <div class="col-3 text-left d-none d-md-block"> <a
+                                href="https://www.youtube.com/channel/UCEU5oJRH3UAuUCswLlVc05A" target="_blank"><i
+                                    class="fab fa-youtube fa-2x"
+                                    style="z-index:9999999;font-size:36px; color:white;"></i></a></div>
+                        <div class="col-3 text-left d-none d-md-block"> <a href="https://www.facebook.com/ireal.labs/"
+                                target="_blank"><i class="fab fa-facebook-square fa-2x"
+                                    style="z-index:9999999;font-size:36px;color:white;"></i></a> </div>
+                        <div class="col-3 text-left d-none d-md-block"> <a href="https://www.instagram.com/ireallabs/"
+                                target="_blank"><i class="fab fa-instagram-square fa-2x"
+                                    style="z-index:9999999;font-size:36px;color:white;"></i></a> </div>
+                        <div class="col-3 text-left"> <a href="https://www.linkedin.com/company/ireallabs/"
+                                target="_blank"><i class="fab fa-linkedin-in fa-lg"
+                                    style="z-index:9999999;font-size:36px;color:white;"></i></a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./bootstrap-validate.js"></script>
+    <script> bootstrapValidate('#name', 'regex:^[a-zA-Z ]*$:Please enter alphabets only '); bootstrapValidate('#email', 'email:Enter a valid email address'); bootstrapValidate('#phone', 'regex: ^[+]*{0,1}[0-9]{1,4}{0,1}[\s\./0-9]*$:Please enter in given format'); bootstrapValidate('#phone', 'max:13:Please dont enter more than 13 characters!'); bootstrapValidate('#phone', 'min:13:Invalid Phone Number'); bootstrapValidate(["#name", "#email", '#phone', '#message'], 'required:Please fill out this field!'); </script>
+    <script> window.onload = function () { var url = document.location.toString(); if (url.match('#v-pills-industrial') || url.match('#v-pills-energy') || url.match('#v-pills-automotive') || url.match('#v-pills-consumer') || url.match('#v-pills-aerospace') || url.match('#v-pills-telecommunication')) { $('html, body').animate({ scrollTop: $("#projects").offset().top }, 0); $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show'); } $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').on('shown', function (e) { window.location.hash = e.target.hash; }); $(".se-pre-con").fadeOut("slow")({ top: -200 }, 1500); }
+        function onClick(element) { document.getElementById("img01").src = element.src; document.getElementById("modal01").style.display = "block"; console.log($(element).siblings('p').text()); $('#modal_text').html($(element).siblings('div').html()); var captionText = document.getElementById("caption"); captionText.innerHTML = element.alt; } var mySidebar = document.getElementById("mySidebar"); function w3_open() { if (mySidebar.style.display === 'block') { mySidebar.style.display = 'none'; } else { mySidebar.style.display = 'block'; } } function w3_close() { mySidebar.style.display = "none"; } </script>
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+</body>
+
+</html>
